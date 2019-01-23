@@ -32,6 +32,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #2e3a3e;
 }
 
 .nav-slider-container {
@@ -51,6 +58,43 @@ body {
   background-color: #2e3a3e;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  padding: 20px 20px 20px 20px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-slider-container .side-nav .sn-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-slider-container .side-nav .sn-logo img {
+  width: 30px;
+  margin-right: 20px;
+  opacity: 0;
+}
+
+.nav-slider-container .side-nav .sn-logo .title {
+  position: relative;
+  margin: 0;
+}
+
+.nav-slider-container .side-nav .sn-logo .title-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2e3a3e;
 }
 
 .nav-slider-container .sidebar {
@@ -70,7 +114,7 @@ body {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 70px;
@@ -164,5 +208,91 @@ body {
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.discover-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.discover-container .discover {
+  padding: 40px;
+  margin-top: 150px;
+  width: 800px;
+  color: #2e3a3e;
+}
+
+.discover-container .discover .heading,
+.discover-container .discover .more-info {
+  text-align: center;
+}
+
+.discover-container .discover .heading h1 {
+  font-size: 2.2rem;
+}
+
+.discover-container .discover .para {
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.discover-container .discover .para p {
+  font-size: 1.2rem;
+  line-height: 1.687;
+}
+
+.discover-container .discover .more-info {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.discover-container .discover .more-info .more-info-btn {
+  position: relative;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  font-weight: 500;
+}
+
+.discover-container .discover .more-info .more-info-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e3a3e;
+  -webkit-transform: translateY(96%);
+          transform: translateY(96%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  z-index: -1;
+}
+
+.discover-container .discover .more-info .more-info-btn:hover {
+  color: #fff;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.discover-container .discover .more-info .more-info-btn:hover span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 /*# sourceMappingURL=style.css.map */

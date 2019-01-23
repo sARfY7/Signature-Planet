@@ -3,6 +3,11 @@ $(function() {
   $(".destination").on("click", function() {
     if (sideNavOut) {
       anime({
+        targets: ".sn-logo .title-cover",
+        translateX: "0",
+        easing: "easeOutQuint"
+      });
+      anime({
         targets: ".side-nav",
         translateX: "-100%",
         easing: "easeOutQuint"
@@ -30,6 +35,12 @@ $(function() {
         filter: "blur(2px)",
         scale: "1.01",
         easing: "easeOutQuint"
+      });
+      anime({
+        targets: ".sn-logo .title-cover",
+        translateX: "100%",
+        easing: "easeOutQuint",
+        delay: 350
       });
       $(".arrow-1").css("transform", "rotate(135deg)");
       $(".arrow-2").css("transform", "rotate(-135deg)");
