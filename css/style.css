@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+@-webkit-keyframes scrollLineAnimation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+@keyframes scrollLineAnimation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-slider-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-slider-container .side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 30%;
+  height: 100%;
+  background-color: #2e3a3e;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.nav-slider-container .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  z-index: 100;
+  color: #fff;
+}
+
+.nav-slider-container .sidebar .logo img {
+  width: 30px;
+}
+
+.nav-slider-container .sidebar .destination p,
+.nav-slider-container .sidebar .scroll p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 0.8rem;
+}
+
+.nav-slider-container .sidebar .destination p {
+  margin-bottom: 10px;
+}
+
+.nav-slider-container .sidebar .destination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-slider-container .sidebar .destination:hover {
+  cursor: pointer;
+}
+
+.nav-slider-container .sidebar .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-slider-container .sidebar .scroll .v-line-container {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.nav-slider-container .sidebar .scroll .v-line-container .v-line {
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: scrollLineAnimation 2s ease-in-out infinite;
+          animation: scrollLineAnimation 2s ease-in-out infinite;
+}
+
+.nav-slider-container .sidebar .arrow .arrow-1,
+.nav-slider-container .sidebar .arrow .arrow-2 {
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.nav-slider-container .sidebar .arrow .arrow-1 {
+  margin-bottom: 7px;
+}
+
+.nav-slider-container .sidebar .destination:hover .arrow-1,
+.nav-slider-container .sidebar .destination:hover .arrow-2 {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+/*# sourceMappingURL=style.css.map */
