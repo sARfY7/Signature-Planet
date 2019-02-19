@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f5f5;
+
+  ul {
+    padding: 0;
+
+    li.f-nav-item {
+      display: inline;
+      margin: 0 20px;
+      font-size: 0.8rem;
+    }
+  }
+}
