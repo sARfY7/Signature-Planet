@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Signature Planet - Dining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/sidebar.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hero.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/contact.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation -->
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li>Gallery</li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="mob-nav-container">
+          <input id="toggle" type="checkbox" />
+
+          <label class="toggle-container" for="toggle">
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The Nav Menu -->
+          <div class="mob-nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="rooms.html">Rooms</a>
+            <a class="nav-item" href="events.html">Events</a>
+            <a class="nav-item" href="dining.html">Dining</a>
+            <a class="nav-item" href="">Gallery</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!-- / Navigation -->
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="scroll">
+          <p>Scroll</p>
+          <div class="v-line-container"><div class="v-line"></div></div>
+        </div>
+      </div>
+      <!-- / Sidebar -->
+
+      <!-- Body Content -->
+      <div class="body-content">
+        <div class="heading"><h1>Contact Us</h1></div>
+        <!-- Contact Form -->
+        <div class="container">
+          <div class="contact-card">
+            <div class="col col-1">
+              <form class="contact-form">
+                <div class="f-group">
+                  <input type="text" name="fullname" placeholder="Full Name" />
+                </div>
+                <div class="f-group">
+                  <input type="email" name="email" placeholder="Email" />
+                </div>
+                <div class="f-group">
+                  <input type="tel" name="mob" placeholder="Mobile No." />
+                </div>
+                <div class="f-group btn-container">
+                  <button class="c-btn">Send</button>
+                </div>
+              </form>
+            </div>
+            <div class="col col-2">
+              <div class="address">
+                <address>
+                  427 Behind Rajpal Toyota Showroom, <br />Scheme No 114,
+                  Indore, <br />Madhya Pradesh 452010
+                </address>
+              </div>
+              <div class="email">
+                <a href="mailto:abc@example.com">abc@example.com</a>
+              </div>
+              <div class="mob">
+                <p>+91 7210101503</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / Contact Form -->
+      </div>
+      <!-- / Body Content -->
+    </div>
+
+    <script defer src="js/jquery-3.3.1.js"></script>
+    <script defer src="js/anime.min.js"></script>
+    <script defer src="js/room.js"></script>
+    <script defer src="js/nav.js"></script>
+  </body>
+</html>

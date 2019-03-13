@@ -1,24 +1,125 @@
 .footer {
+  background-color: #f4f5f5;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer .f-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-  background-color: #f4f5f5;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer ul {
+.footer .f-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .f-container .links ul {
   padding: 0;
+  margin: 0;
 }
 
-.footer ul li.f-nav-item {
+.footer .f-container .links ul li.f-nav-item {
   display: inline;
-  margin: 0 20px;
-  font-size: 0.8rem;
+  margin: 0 10px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.footer .f-container .links ul li.f-nav-item:first-of-type {
+  margin-top: 0;
+}
+
+.footer .f-container .links ul li.f-nav-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer .f-container .address-card {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .f-container .address-card .img-container {
+  width: 200px;
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer .f-container .address-card .address {
+  max-width: 250px;
+  padding: 20px;
+  background-color: #e5e9ec;
+}
+
+.footer .f-container .email-mob {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .f-container .email-mob p {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px 10px;
+  border: 1px solid #2e3a3e;
+  background: none;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #2e3a3e;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.f-book-btn {
+  font-size: 1.1vw;
+}
+
+@media screen and (max-width: 570px) {
+  .footer ul li.f-nav-item {
+    margin: 0 10px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

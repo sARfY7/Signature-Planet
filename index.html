@@ -33,43 +33,42 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <!-- <div class="brand-logo">
-        <img src="img/SignaturePlanetLogo.svg" alt="" />
-      </div> -->
-      <!-- <div class="menu-outer-container">
-        <div class="menu-container">
-          <div class="menu">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-          </div>
-        </div>
-        <div class="menu-text">
-          <p>MENU</p>
-        </div>
-      </div> -->
-
-      <div class="menu-icon">
-        <span class="menu-icon__line menu-icon__line-left"></span>
-        <span class="menu-icon__line"></span>
-        <span class="menu-icon__line menu-icon__line-right"></span>
-      </div>
-
+    <!-- Navigation -->
+    <nav>
       <div class="nav">
-        <div class="nav__content">
-          <ul class="nav__list">
-            <li class="nav__list-item">Home</li>
-            <li class="nav__list-item">Rooms</li>
-            <li class="nav__list-item">Events</li>
-            <li class="nav__list-item">Dining</li>
-            <li class="nav__list-item">Gallery</li>
-            <li class="nav__list-item">Contact</li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
 
-      <div class="side-nav"></div>
+      <div class="mob-nav-container">
+
+        <input id="toggle" type="checkbox">
+    
+        
+        <label class="toggle-container" for="toggle">
+         
+          <span class="button button-toggle"></span>
+        </label>
+    
+        <!-- The Nav Menu -->
+        <div class="mob-nav">
+          <a class="nav-item" href="index.html">Home</a>
+          <a class="nav-item" href="rooms.html">Rooms</a>
+          <a class="nav-item" href="events.html">Events</a>
+          <a class="nav-item" href="dining.html">Dining</a>
+          <a class="nav-item" href="">Gallery</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- / Navigation -->
+      
       <div class="sidebar">
         <div class="scroll">
           <p>Scroll</p>
@@ -117,12 +116,7 @@
             </div>
           </div>
           <div class="destination-container">
-            <div class="heading"><h1>Destination</h1></div>
             <div class="container">
-              <div class="cover">
-                <span class="cover-img-cover"></span
-                ><img src="img/4.jpg" alt="" />
-              </div>
               <div class="place-container">
                 <div class="place">
                   <div class="heading"><h1>Signature Planet</h1></div>
@@ -177,7 +171,7 @@
                     >
                   </div>
                   <div class="more-info know-more-btn">
-                    <a href="classic.html" class="more-info-btn"
+                    <a href="rooms.html#classic" class="more-info-btn"
                       ><span class="under"></span
                       ><span class="text">Know More</span></a
                     >
@@ -199,7 +193,7 @@
                     >
                   </div>
                   <div class="more-info know-more-btn">
-                    <a href="deluxe.html" class="more-info-btn"
+                    <a href="rooms.html#deluxe" class="more-info-btn"
                       ><span class="under"></span
                       ><span class="text">Know More</span></a
                     >
@@ -215,23 +209,16 @@
               <div class="background"></div>
               <div class="event">
                 <div class="event-info">
-                  <h3>Banquet Hall</h3>
+                  <h3>Personal Events</h3>
                   <p>
-                    All sorts of events such as an engagement party, weddings,
+                    All personal events such as an engagement party, weddings,
                     kitty parties, birthday parties, baby showers, bridal
-                    showers, corporate events, etc. are offered by Signature
-                    Hotel in its own luxurious way. The wide and spacious
-                    banquet hall captures the essence of your theme. We strive
-                    to create priceless experiences that are not only brilliant
-                    and beautiful, but also engaging, polished and productive.
-                    It offers such a space that lets you take advantage of
-                    pleasant aura and positive environment to create perfect
-                    memories. We help you make your event a success down to the
-                    smallest details.
+                    showers, etc. are offered by Signature Hotel in its own
+                    luxurious way.
                   </p>
                 </div>
                 <div class="event-img">
-                  <img src="img/banquet.jpg" alt="" />
+                  <img src="img/birthday.jpg" alt="" />
                 </div>
               </div>
               <div class="event">
@@ -239,56 +226,18 @@
                   <img src="img/corporate.jpg" alt="" />
                 </div>
                 <div class="event-info">
-                  <h3>Corporate Event</h3>
+                  <h3>Corporate Events</h3>
                   <p>
                     At Signature Hotels, we understand working relationships and
                     corporate responsibility. That’s why we are ready for
-                    whatever corporate event you may be looking to host. Whether
-                    it is a small business meeting or a seminar or product
-                    launches, be ready for the best services and standards.
-                  </p>
-                </div>
-              </div>
-              <div class="event">
-                <div class="event-info">
-                  <h3>Dining</h3>
-                  <p>
-                    We have well curated areas that adds to the whole dining
-                    experiences. With wide range of cuisines available at our
-                    restaurant, we aim at offering our guests with highest
-                    quality, best services and a memorable dining. We ensure
-                    that you maintain good health throughout your stay. And at
-                    the same time it gives you the opportunity to dabble in the
-                    unique delicacies. We also offer Rooftop Dining experiences
-                    to the guests with the mesmerizing rooftop views.
-                  </p>
-                </div>
-                <div class="event-img">
-                  <img src="img/dining.jpg" alt="" />
-                </div>
-              </div>
-              <div class="event">
-                <div class="event-img">
-                  <img src="img/wedding.jpg" alt="" />
-                </div>
-                <div class="event-info">
-                  <h3>Personal Events(Engagement, Wedding, Kitty Party)</h3>
-                  <p>
-                    Make your special day perfect at Signature Hotels with a
-                    lifetime of memories. From wedding &amp; pre- wedding
-                    celebrations to Birthday parties and baby shower we offer a
-                    banquet hall with generous amenities, stylish design,
-                    convenient arrangements and a range of delectable cuisine
-                    and much more. Plan other functions with us as well, and
-                    leave it to us to treat your guests to exceptional
-                    hospitality as you make memories that last forever.
+                    whatever corporate event you may be looking to host.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="dining">
-            <div class="heading"><h1>Food</h1></div>
+            <div class="heading"><h1>Dining</h1></div>
             <div class="food-container">
               <div class="food">
                 <div class="food-img"><img src="img/food-1.jpg" alt="" /></div>
@@ -315,14 +264,43 @@
               </div>
             </div>
           </div>
-          <div class="footer">
-            <ul>
-              <li class="f-nav-item"><a href="#">Home</a></li>
-              <li class="f-nav-item"><a href="#">About</a></li>
-              <li class="f-nav-item"><a href="#">Privacy Policy</a></li>
-              <li class="f-nav-item"><a href="#">Terms of Use</a></li>
-            </ul>
+          <!-- Footer -->
+        <div class="footer">
+            <div class="f-container">
+              <div class="col">
+                <div class="address-card">
+                  <div class="img-container"></div>
+                  <div class="address">
+                    <address>
+                      427 Behind Rajpal Toyota Showroom, <br />Scheme No 114,
+                      Indore, <br />Madhya Pradesh 452010
+                    </address>
+                  </div>
+                </div>
+                <div class="email-mob">
+                  <div class="email">
+                    <a href="mailto:abc@example.com">abc@example.com</a>
+                  </div>
+                  <div class="mob">
+                    <p>+91 7210101503</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="links">
+                  <ul>
+                    <li class="f-nav-item"><a href="index.html">Home</a></li>
+                    <li class="f-nav-item"><a href="rooms.html">Rooms</a></li>
+                    <li class="f-nav-item"><a href="events.html">Events</a></li>
+                    <li class="f-nav-item"><a href="dining.html">Dining</a></li>
+                    <li class="f-nav-item"><a href="#">Gallery</a></li>
+                    <li class="f-nav-item"><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- / Footer -->
         </div>
       </div>
       <div class="booking-container">

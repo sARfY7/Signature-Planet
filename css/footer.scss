@@ -1,17 +1,106 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
   background-color: #f4f5f5;
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
 
-  ul {
-    padding: 0;
+  .f-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    li.f-nav-item {
-      display: inline;
-      margin: 0 20px;
-      font-size: 0.8rem;
+    .links {
+      display: flex;
+      flex-direction: row;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li.f-nav-item {
+          display: inline;
+          margin: 0 10px;
+          list-style: none;
+          font-size: 1rem;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .col {
+      // max-width: 400px;
+    }
+
+    .address-card {
+      max-width: 450px;
+      display: flex;
+      flex-direction: row;
+
+      .img-container {
+        width: 200px;
+        background-image: url("../img/1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .address {
+        max-width: 250px;
+        padding: 20px;
+        background-color: #e5e9ec;
+      }
+    }
+
+    .email-mob {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 10px 10px;
+  border: 1px solid #2e3a3e;
+  background: none;
+  border-radius: 25px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #2e3a3e;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.f-book-btn {
+  font-size: 1.1vw;
+}
+
+@media screen and (max-width: 570px) {
+  .footer {
+    ul {
+      li.f-nav-item {
+        margin: 0 10px;
+      }
     }
   }
 }

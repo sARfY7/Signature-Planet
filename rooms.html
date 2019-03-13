@@ -13,6 +13,7 @@
       href="css/sidebar.css"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hero.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/room.css" />
     <link
       rel="stylesheet"
@@ -23,43 +24,38 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- Menu -->
-      <!-- <div class="menu-outer-container">
-        <div class="menu-container">
-          <div class="menu">
-            <div class="bar bar-1"></div>
-            <div class="bar bar-2"></div>
-            <div class="bar bar-3"></div>
-          </div>
-        </div>
-        <div class="menu-text">
-          <p>MENU</p>
-        </div>
-      </div> -->
-      <!-- / Menu -->
-
-      <div class="menu-icon">
-        <span class="menu-icon__line menu-icon__line-left"></span>
-        <span class="menu-icon__line"></span>
-        <span class="menu-icon__line menu-icon__line-right"></span>
-      </div>
-
-      <div class="nav">
-        <div class="nav__content">
-          <ul class="nav__list">
-            <li class="nav__list-item">Home</li>
-            <li class="nav__list-item">Rooms</li>
-            <li class="nav__list-item">Events</li>
-            <li class="nav__list-item">Dining</li>
-            <li class="nav__list-item">Gallery</li>
-            <li class="nav__list-item">Contact</li>
+      <!-- Navigation -->
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li>Gallery</li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </div>
 
-      <!-- Sidenav -->
-      <div class="side-nav"></div>
-      <!-- / Sidenav -->
+        <div class="mob-nav-container">
+          <input id="toggle" type="checkbox" />
+
+          <label class="toggle-container" for="toggle">
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The Nav Menu -->
+          <div class="mob-nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="rooms.html">Rooms</a>
+            <a class="nav-item" href="events.html">Events</a>
+            <a class="nav-item" href="dining.html">Dining</a>
+            <a class="nav-item" href="">Gallery</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!-- / Navigation -->
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -74,22 +70,91 @@
       <div class="body-content">
         <!-- Hero -->
         <div class="hero">
-          <div class="hero-img">
-            <img src="img/classic.jpg" alt="Signature Planet's Classic Room" />
-          </div>
           <div class="hero-content">
             <div class="hero-heading">
               <h1>Rooms</h1>
             </div>
             <div class="hero-text">
               <p>
-                East meets West in this modern reimagining of a merchant’s
-                residence in the center of town - a home away from home.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                voluptate quis officiis sed error harum, est fuga vel eaque
+                ipsa?
+              </p>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="img/classic.jpg" alt="Signature Planet's Classic Room" />
+          </div>
+        </div>
+        <!-- / Hero -->
+
+        <!-- Classic Room -->
+        <div class="room" id="classic">
+          <div class="room-info">
+            <div class="room-heading">
+              <h1>Classic <span>Room</span></h1>
+            </div>
+            <div class="room-content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis optio eveniet a commodi animi nulla fugiat delectus
+                assumenda sapiente distinctio.
+              </p>
+            </div>
+          </div>
+          <div class="room-slider-container">
+            <div class="room-slider">
+              <div class="room-slider-item">
+                <img src="img/classic.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/deluxe.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/wedding.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/dining.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- / Classic Room -->
+
+        <!-- Deluxe Room -->
+        <div class="room" id="deluxe">
+          <div class="room-slider-container">
+            <div class="room-slider">
+              <div class="room-slider-item">
+                <img src="img/classic.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/deluxe.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/wedding.jpg" alt="" />
+              </div>
+              <div class="room-slider-item">
+                <img src="img/dining.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="room-info">
+            <div class="room-heading">
+              <h1>Deluxe <span>Room</span></h1>
+            </div>
+            <div class="room-content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis optio eveniet a commodi animi nulla fugiat delectus
+                assumenda sapiente distinctio.
               </p>
             </div>
           </div>
         </div>
-        <!-- / Hero -->
+
+        <!-- / Deluxe Room -->
 
         <!-- Amenities -->
         <div class="container">
@@ -211,12 +276,39 @@
 
         <!-- Footer -->
         <div class="footer">
-          <ul>
-            <li class="f-nav-item"><a href="#">Home</a></li>
-            <li class="f-nav-item"><a href="#">About</a></li>
-            <li class="f-nav-item"><a href="#">Privacy Policy</a></li>
-            <li class="f-nav-item"><a href="#">Terms of Use</a></li>
-          </ul>
+          <div class="f-container">
+            <div class="col">
+              <div class="address-card">
+                <div class="img-container"></div>
+                <div class="address">
+                  <address>
+                    427 Behind Rajpal Toyota Showroom, Scheme No 114, Indore,
+                    Madhya Pradesh 452010
+                  </address>
+                </div>
+              </div>
+              <div class="email-mob">
+                <div class="email">
+                  <a href="mailto:abc@example.com">abc@example.com</a>
+                </div>
+                <div class="mob">
+                  <p>+91 7210101503</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="links">
+                <ul>
+                  <li class="f-nav-item"><a href="index.html">Home</a></li>
+                  <li class="f-nav-item"><a href="rooms.html">Rooms</a></li>
+                  <li class="f-nav-item"><a href="events.html">Events</a></li>
+                  <li class="f-nav-item"><a href="dining.html">Dining</a></li>
+                  <li class="f-nav-item"><a href="#">Gallery</a></li>
+                  <li class="f-nav-item"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- / Footer -->
       </div>

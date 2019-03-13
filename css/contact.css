@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  color: #2e3a3e;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #2e3a3e;
+}
+
+.container {
+  padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.col-2 {
+  background-color: #2e3a3e;
+  color: #fff;
+  padding: 20px;
+  padding-top: 30px;
+  text-align: right;
+}
+
+.col-2 .mob p {
+  margin: 0;
+}
+
+.col-2 .email,
+.col-2 .mob {
+  margin-top: 20px;
+}
+
+.col-2 .email a,
+.col-2 .email a:visited {
+  color: #fff;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+.f-group {
+  padding: 10px 0;
+}
+
+.f-group input {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 20px;
+  width: 300px;
+  height: 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.f-group input:hover {
+  background-color: #e7e7e7;
+}
+
+.f-group input:focus {
+  outline: none;
+  border: 1px solid #000;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c-btn {
+  background-color: transparent;
+  border: 1px solid #2e2e2e;
+  border-radius: 25px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c-btn:hover {
+  cursor: pointer;
+  background-color: #2e3a3e;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c-btn:active, .c-btn:focus {
+  outline: none;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 750px) {
+  .contact-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
