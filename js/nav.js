@@ -1,12 +1,25 @@
-const $window = $(window);
-const vHeight = window.innerHeight;
+const app = (() => {
+  let body;
+  let menu;
+  let menuItems;
 
-$window.on("scroll", function() {
-  // console.log(vHeight);
-  if ($window.scrollTop() > vHeight) {
-    $(".nav").css("background-color", "#fff");
-  }
-  if ($window.scrollTop() < vHeight) {
-    $(".nav").css("background-color", "transparent");
-  }
-});
+  const init = () => {
+    body = document.querySelector(".mob-nav-container");
+    menu = document.querySelector(".menu-icon");
+    menuItems = document.querySelectorAll(".mob-nav__list-item");
+
+    applyListeners();
+  };
+
+  const applyListeners = () => {
+    menu.addEventListener("click", () => toggleClass(body, "nav-active"));
+  };
+
+  const toggleClass = (element, stringClass) => {
+    if (element.classList.contains(stringClass))
+      element.classList.remove(stringClass);
+    else element.classList.add(stringClass);
+  };
+
+  init();
+})();

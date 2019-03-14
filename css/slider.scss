@@ -50,6 +50,7 @@
     background-size: cover;
     transform-origin: center;
     animation: sliderFade 18s linear infinite;
+    will-change: transform, opacity;
   }
 
   .slide:nth-child(1) {

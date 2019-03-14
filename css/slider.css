@@ -83,6 +83,7 @@
           transform-origin: center;
   -webkit-animation: sliderFade 18s linear infinite;
           animation: sliderFade 18s linear infinite;
+  will-change: transform, opacity;
 }
 
 .slider .slide:nth-child(1) {

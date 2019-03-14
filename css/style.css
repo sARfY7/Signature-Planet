@@ -25,6 +25,119 @@ a:visited {
   position: relative;
 }
 
+.body-content {
+  position: relative;
+}
+
+.booking-overlay {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  z-index: 98;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-overlay h1,
+.booking-overlay h2,
+.booking-overlay h3,
+.booking-overlay h4,
+.booking-overlay h5,
+.booking-overlay h6 {
+  margin: 0;
+}
+
+.b-form {
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.b-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.b-form form input {
+  background: transparent;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  max-width: 120px;
+}
+
+.b-form form input:focus {
+  outline: none;
+}
+
+.box:nth-of-type(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.box-head,
+.box-tail {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 0;
+  letter-spacing: 1.5px;
+}
+
+.divider {
+  width: 2px;
+  height: 80%;
+  background-color: #fff;
+}
+
+.b-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 1.5px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.b-btn:hover {
+  color: #fff;
+  background: #000;
+  border-color: #000;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
 .discover-container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -6,12 +6,12 @@
     <title>Signature Planet - Rooms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="css/sidebar.css"
-    />
+    /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/hero.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/room.css" />
@@ -38,52 +38,47 @@
         </div>
 
         <div class="mob-nav-container">
-          <input id="toggle" type="checkbox" />
 
-          <label class="toggle-container" for="toggle">
-            <span class="button button-toggle"></span>
-          </label>
-
-          <!-- The Nav Menu -->
-          <div class="mob-nav">
-            <a class="nav-item" href="index.html">Home</a>
-            <a class="nav-item" href="rooms.html">Rooms</a>
-            <a class="nav-item" href="events.html">Events</a>
-            <a class="nav-item" href="dining.html">Dining</a>
-            <a class="nav-item" href="">Gallery</a>
-            <a class="nav-item" href="contact.html">Contact</a>
-          </div>
+            <div class="menu-icon">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+              </div>
+              
+              <div class="mob-nav">
+                <div class="mob-nav__content">
+                  <ul class="mob-nav__list">
+                    <li class="mob-nav__list-item"><a href="index.html">Home</a></li>
+                    <li class="mob-nav__list-item"><a href="rooms.html">Rooms</a></li>
+                    <li class="mob-nav__list-item"><a href="events.html">Events</a></li>
+                    <li class="mob-nav__list-item"><a href="dining.html">Dining</a></li>
+                    <li class="mob-nav__list-item"><a href="#">Gallery</a></li>
+                    <li class="mob-nav__list-item"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>            
         </div>
       </nav>
       <!-- / Navigation -->
 
       <!-- Sidebar -->
-      <div class="sidebar">
+      <!-- <div class="sidebar">
         <div class="scroll">
           <p>Scroll</p>
           <div class="v-line-container"><div class="v-line"></div></div>
         </div>
-      </div>
+      </div> -->
       <!-- / Sidebar -->
 
       <!-- Body Content -->
       <div class="body-content">
         <!-- Hero -->
-        <div class="hero">
-          <div class="hero-content">
-            <div class="hero-heading">
-              <h1>Rooms</h1>
-            </div>
-            <div class="hero-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                voluptate quis officiis sed error harum, est fuga vel eaque
-                ipsa?
-              </p>
-            </div>
-          </div>
-          <div class="hero-img">
-            <img src="img/classic.jpg" alt="Signature Planet's Classic Room" />
+        <div
+          class="hero"
+          style="background: url('img/classic.jpg') no-repeat center; background-size: cover;"
+        >
+          <div class="hero-title">
+            <h1>Rooms</h1>
           </div>
         </div>
         <!-- / Hero -->
@@ -277,35 +272,59 @@
         <!-- Footer -->
         <div class="footer">
           <div class="f-container">
-            <div class="col">
-              <div class="address-card">
-                <div class="img-container"></div>
-                <div class="address">
-                  <address>
-                    427 Behind Rajpal Toyota Showroom, Scheme No 114, Indore,
-                    Madhya Pradesh 452010
-                  </address>
-                </div>
-              </div>
-              <div class="email-mob">
-                <div class="email">
-                  <a href="mailto:abc@example.com">abc@example.com</a>
-                </div>
-                <div class="mob">
-                  <p>+91 7210101503</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="links">
+            <div class="f-row h-center">
+              <div class="f-links">
                 <ul>
                   <li class="f-nav-item"><a href="index.html">Home</a></li>
                   <li class="f-nav-item"><a href="rooms.html">Rooms</a></li>
                   <li class="f-nav-item"><a href="events.html">Events</a></li>
                   <li class="f-nav-item"><a href="dining.html">Dining</a></li>
                   <li class="f-nav-item"><a href="#">Gallery</a></li>
-                  <li class="f-nav-item"><a href="#">Contact</a></li>
+                  <li class="f-nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
+              </div>
+            </div>
+            <div class="f-row">
+              <div class="f-col mt-20">
+                <div class="f-form">
+                  <form action="">
+                    <div class="f-row">
+                      <div class="f-col p-20">
+                        <input type="text" placeholder="Full Name" />
+                      </div>
+                      <div class="f-col p-20">
+                        <input type="tel" placeholder="Mobile No." />
+                      </div>
+                    </div>
+                    <div class="f-row p-20">
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="f-row mt-20 h-center">
+                      <button class="btn">Send Query</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="f-col mt-20">
+                <div class="f-row h-center">
+                  <div class="f-card">
+                    <div class="f-card-img"></div>
+                    <div class="f-card-content">
+                      <address>
+                        427 Behind Rajpal Toyota Showroom, <br />Scheme No 114,
+                        Indore, <br />Madhya Pradesh 452010
+                      </address>
+                    </div>
+                  </div>
+                </div>
+                <div class="f-row mt-20">
+                  <div class="f-col">
+                    <a href="mailto:abc@example.com">abc@example.com</a>
+                  </div>
+                  <div class="f-col text-align-right">
+                    <a href="tel:+917210101503">+91 7210101503</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
