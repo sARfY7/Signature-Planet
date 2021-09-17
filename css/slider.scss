@@ -49,21 +49,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform-origin: center;
-    animation: sliderFade 18s linear infinite;
+    animation: sliderFade 12s linear infinite;
     will-change: transform, opacity;
   }
 
   .slide:nth-child(1) {
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/SignaturePlanet1.jpg");
   }
 
   .slide:nth-child(2) {
-    background-image: url("../img/2.jpg");
+    background-image: url("../img/SignaturePlanet2.jpg");
     animation-delay: 6s;
   }
 
-  .slide:nth-child(3) {
-    background-image: url("../img/3.jpg");
-    animation-delay: 12s;
-  }
+  // .slide:nth-child(3) {
+  //   background-image: url("../img/Front.jpg");
+  //   animation-delay: 12s;
+  // }
 }

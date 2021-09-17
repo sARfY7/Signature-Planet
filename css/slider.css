@@ -81,24 +81,17 @@
   background-size: cover;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: sliderFade 18s linear infinite;
-          animation: sliderFade 18s linear infinite;
+  -webkit-animation: sliderFade 12s linear infinite;
+          animation: sliderFade 12s linear infinite;
   will-change: transform, opacity;
 }
 
 .slider .slide:nth-child(1) {
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/SignaturePlanet1.jpg");
 }
 
 .slider .slide:nth-child(2) {
-  background-image: url("../img/2.jpg");
+  background-image: url("../img/SignaturePlanet2.jpg");
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
-
-.slider .slide:nth-child(3) {
-  background-image: url("../img/3.jpg");
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-/*# sourceMappingURL=slider.css.map */

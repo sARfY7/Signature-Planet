@@ -62,12 +62,41 @@ a:visited {
   margin: 0;
 }
 
-.b-form {
-  border: 1px solid #fff;
+.room-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
   margin-bottom: 20px;
 }
 
-.b-form form {
+.r-type {
+  border-radius: 25px;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+}
+
+.r-type input {
+  pointer-events: none;
+}
+
+.r-type:hover {
+  cursor: pointer;
+}
+
+.checked {
+  background: #000;
+}
+
+.b-form {
+  border: 1px solid #fff;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +106,7 @@ a:visited {
           flex-direction: row;
 }
 
-.b-form form input {
+.b-form input {
   background: transparent;
   border: none;
   text-align: center;
@@ -87,7 +116,7 @@ a:visited {
   max-width: 120px;
 }
 
-.b-form form input:focus {
+.b-form input:focus {
   outline: none;
 }
 
@@ -117,6 +146,20 @@ a:visited {
   width: 2px;
   height: 80%;
   background-color: #fff;
+}
+
+.query-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.query-box textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
 }
 
 .b-btn {
@@ -396,7 +439,7 @@ a:visited {
 .events .events-container .background {
   position: absolute;
   z-index: -1;
-  background-color: #f4f5f5;
+  background-color: #e99e99;
   top: 0;
   left: 70px;
   right: 70px;
@@ -493,7 +536,7 @@ a:visited {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #f4f5f5;
+  background-color: #ffe12b;
 }
 
 .dining .food-container .food .food-info h3 {
@@ -659,4 +702,3 @@ a:visited {
     padding: 0 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */

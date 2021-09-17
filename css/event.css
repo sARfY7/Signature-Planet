@@ -73,7 +73,7 @@ a:visited {
 .events .events-container .background {
   position: absolute;
   z-index: -1;
-  background-color: #f4f5f5;
+  background-color: #96002a;
   top: 0;
   left: 70px;
   right: 70px;
@@ -81,6 +81,7 @@ a:visited {
 }
 
 .events .events-container .event {
+  color: #fff;
   padding-top: 50px;
   display: -ms-grid;
   display: grid;
@@ -185,4 +186,3 @@ a:visited {
     grid-column-end: auto;
   }
 }
-/*# sourceMappingURL=event.css.map */

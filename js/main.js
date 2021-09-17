@@ -51,4 +51,16 @@ $(function() {
     });
     $("body").css("overflow-y", "auto");
   });
+
+  $(".r-type").click(function(e) {
+    e.preventDefault();
+    console.log();
+    if ($(this).children()[0].checked) {
+      $(this).removeClass("checked");
+      $(this).children()[0].checked = false;
+    } else {
+      $(this).addClass("checked");
+      $(this).children()[0].checked = true;
+    }
+  });
 });
